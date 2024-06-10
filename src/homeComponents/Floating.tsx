@@ -19,11 +19,11 @@ const Floating: React.FC = () => {
       <ul>
         <li>
           <a href="#" className="fb-icon"><i className="fa fa-facebook"></i></a>
-          Share on Facebook
+          Lorem ipsum
         </li>
         <li>
           <a href="#" className="tw-icon"><i className="fa fa-twitter"></i></a>
-          Share on Twitter
+          Lorem Ipsum
         </li>
       
       </ul>
