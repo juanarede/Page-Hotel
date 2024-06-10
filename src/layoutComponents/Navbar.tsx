@@ -47,9 +47,10 @@ const Navbar: React.FC = () => {
             <input
               type="text"
               id="search-navbar"
-              className="block w-full p-2 pl-10 text-gray-900 rounded-lg text-md "
+              className="block w-full p-2 pl-10 text-gray-900 rounded-lg text-md hover:border-blue-500"
               placeholder="Search..."
             />
+
           </div>
           <button
             id="navbar-toggle"
@@ -75,9 +76,10 @@ const Navbar: React.FC = () => {
             <input
               type="text"
               id="search-navbar"
-              className="block w-full p-2 pl-10 text-gray-900 rounded-lg text-md "
+              className="block w-full p-2 pl-10 text-gray-900 rounded-lg text-md hover:border-blue-500"
               placeholder="Search..."
             />
+
           </div>
           <ul className="flex flex-col p-4 mt-4 font-medium border border-gray-100 rounded-lg md:p-0 md:flex-row md:space-x-8 md:mt-0 md:border-0 dark:border-gray-700">
             <li>

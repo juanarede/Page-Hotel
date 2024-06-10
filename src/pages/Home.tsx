@@ -2,6 +2,7 @@
 import Aboutus from "../homeComponents/Aboutus";
 import Floating from "../homeComponents/Floating";
 import Header from "../homeComponents/Header";
+import Location from "../homeComponents/Location";
 import OurServices from "../homeComponents/OurServices";
 
 
@@ -13,8 +14,8 @@ const Home: React.FC = () => {
      <Header/>
      <Floating/>
      <Aboutus/>
-     
     <OurServices/>
+    <Location/>
     </>
   )
 };
