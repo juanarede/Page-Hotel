@@ -21,7 +21,7 @@ const Navbar: React.FC = () => {
   }, []);
 
   return (
-    <nav className={`fixed top-0 left-0 w-full z-50 transition-colors duration-300 ${isScrolled ? "bg-black" : "bg-transparent"}`}>
+    <nav className={`fixed top-0 left-0 w-full z-50 transition-colors duration-300 ${isScrolled ? "bg-black" : "bg-black"}`}>
       <div className="flex flex-wrap items-center justify-between max-w-screen-xl p-5 mx-auto">
         <a href="" className="flex items-center">
           <img style={{ width:"6rem", marginBottom:"1rem" }}  src="https://www.hotelcc.com.ar/wp-content/uploads/2013/12/Logo_w.png" className="mr-3 " alt="Logo" />

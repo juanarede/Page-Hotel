@@ -18,11 +18,11 @@ const Footer: React.FC = () => {
                                     <LocationIcon /> Fray Justo S. M. de Oro 2747
                                 </a>
                             </li>
-                            <li className="my-2 sm:my-0">
+                            {/* <li className="my-2 sm:my-0">
                                 <a href="" className="inline-flex items-center gap-1 text-white">
                                     <WhatsappIcon /> (011) 4778-4945
                                 </a>
-                            </li>
+                            </li> */}
                             <li>
                                 <a href="" className="inline-flex items-center gap-1 text-white">
                                     <EmailIcon /> reservas@hotelcc.com.ar
