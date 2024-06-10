@@ -28,7 +28,7 @@ const Aboutus: React.FC = () => {
                             </div>
                         </div>
                         <div className="mt-12 sm:mt-16 lg:mt-0">
-                            <div className="pl-6 lg:relative lg:m-0 lg:h-full lg:px-0 ">
+                            <div className="pl-5 lg:relative lg:m-0 lg:h-full lg:px-0 ">
                                 <div className="about-container">
                                     <img loading="lazy"
                                         className="about-image"
@@ -67,7 +67,7 @@ const Aboutus: React.FC = () => {
                             </div>
                         </div>
                         <div className="mt-12 sm:mt-16 lg:mt-0">
-                            <div className="pl-6 lg:relative lg:m-0 lg:h-full lg:px-0 ">
+                            <div className="pl-5 lg:relative lg:m-0 lg:h-full lg:px-0 ">
                                 <div className="about-container">
                                     <img loading="lazy"
                                         className="about-image"
@@ -108,7 +108,7 @@ const Aboutus: React.FC = () => {
                             </div>
                         </div>
                         <div className="mt-12 sm:mt-16 lg:mt-0">
-                            <div className="pl-6 lg:relative lg:m-0 lg:h-full lg:px-0 ">
+                            <div className="pl-5 lg:relative lg:m-0 lg:h-full lg:px-0 ">
                                 <div className="about-container">
                                     <img loading="lazy"
                                         className="about-image"
