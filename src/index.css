@@ -14,3 +14,21 @@ body {
 }
 
 
+.about-container {
+  @media (max-width: 640px) {
+    display: flex;
+    justify-content: center;
+    margin-right:1.2rem;
+  }
+}
+
+.about-image {
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+
+

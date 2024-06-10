@@ -1,6 +1,6 @@
 import ImageAbout1 from "../assets/img/vivi-palermo.jpg";
-import ImageAbout2 from "../assets/img/disfruta.jpg";
-import ImageAbout3 from "../assets/img/soluciones-cormporativas.jpg";
+import ImageAbout2 from "../assets/img/disfruta2.jpg";
+import ImageAbout3 from "../assets/img/soluciones-corporativas.jpg";
 import { LocationIcon } from "../icons/LocationIcon";
 
 const Aboutus: React.FC = () => {
@@ -11,14 +11,12 @@ const Aboutus: React.FC = () => {
                 <div className="relative">
                     <div className="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-2 lg:gap-24 lg:px-8 ">
                         <div className="max-w-xl px-6 mx-auto lg:mx-0 lg:max-w-none lg:py-16 lg:px-0 ">
-
                             <div>
                                 <div>
                                     <span className="flex items-center justify-center w-12 h-12 bg-[#00acee] bg-opacity-50 rounded-xl">
-                                    <svg  xmlns="http://www.w3.org/2000/svg"  width="34"  height="34"  viewBox="0 0 24 24"  fill="none"  stroke="white"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  className="icon icon-tabler icons-tabler-outline icon-tabler-map-pin"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" /><path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" /></svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="icon icon-tabler icons-tabler-outline icon-tabler-map-pin"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" /><path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" /></svg>
                                     </span>
                                 </div>
-
                                 <div className="mt-6">
                                     <h2 className="text-3xl font-bold tracking-tight text-black">
                                         VIVÍ PALERMO
@@ -26,19 +24,25 @@ const Aboutus: React.FC = () => {
                                     <p className="mt-4 text-lg text-gray-500">
                                         El Hotel Cristoforo Colombo está situado en un lugar de privilegio en el corazón de los bosques de Palermo, en la misma manzana del Centro de Convenciones “La Rural”, próximo a la Embajada de los Estados Unidos, a pocos metros del Campo de Polo, Hipódromo y a escasos minutos del Aeroparque Metropolitano.
                                     </p>
-
                                 </div>
                             </div>
                         </div>
                         <div className="mt-12 sm:mt-16 lg:mt-0">
-                            <div className="pl-6 -mr-48 md:-mr-16 lg:relative lg:m-0 lg:h-full lg:px-0">
-                                <img loading="lazy" width="647" height="486"
-                                    className="w-full shadow-2xl rounded-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
-                                    src={ImageAbout1} />
+                            <div className="pl-6 lg:relative lg:m-0 lg:h-full lg:px-0 ">
+                                <div className="about-container">
+                                    <img loading="lazy"
+                                        className="about-image"
+                                        src={ImageAbout1}
+                                        alt="Viví Palermo" />
+                                </div>
                             </div>
                         </div>
+
+
+
                     </div>
                 </div>
+
 
 
 
@@ -48,7 +52,7 @@ const Aboutus: React.FC = () => {
                             <div>
                                 <div>
                                     <span className="flex items-center justify-center w-12 h-12 bg-[#00acee] bg-opacity-50 rounded-xl">
-                                    <svg  xmlns="http://www.w3.org/2000/svg"  width="34"  height="34"  viewBox="0 0 24 24"  fill="none"  stroke="white"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  className="icon icon-tabler icons-tabler-outline icon-tabler-tools-kitchen-2"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M19 3v12h-5c-.023 -3.681 .184 -7.406 5 -12zm0 12v6h-1v-3m-10 -14v17m-3 -17v3a3 3 0 1 0 6 0v-3" /></svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="icon icon-tabler icons-tabler-outline icon-tabler-tools-kitchen-2"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M19 3v12h-5c-.023 -3.681 .184 -7.406 5 -12zm0 12v6h-1v-3m-10 -14v17m-3 -17v3a3 3 0 1 0 6 0v-3" /></svg>
                                     </span>
                                 </div>
                                 <div className="mt-6">
@@ -63,10 +67,13 @@ const Aboutus: React.FC = () => {
                             </div>
                         </div>
                         <div className="mt-12 sm:mt-16 lg:mt-0">
-                            <div className="pr-6 -ml-48 md:-ml-16 lg:relative lg:m-0 lg:h-full lg:px-0">
-                                <img alt="Inbox user interface" loading="lazy" width="647" height="486"
-                                    className="w-full shadow-xl rounded-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none"
-                                    src={ImageAbout2} />
+                            <div className="pl-6 lg:relative lg:m-0 lg:h-full lg:px-0 ">
+                                <div className="about-container">
+                                    <img loading="lazy"
+                                        className="about-image"
+                                        src={ImageAbout2}
+                                        alt="Viví Palermo" />
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -101,11 +108,13 @@ const Aboutus: React.FC = () => {
                             </div>
                         </div>
                         <div className="mt-12 sm:mt-16 lg:mt-0">
-                            <div className="pl-6 -mr-48 md:-mr-16 lg:relative lg:m-0 lg:h-full lg:px-0">
-                                <img loading="lazy" width="646" height="485"
-                                    className="w-full shadow-2xl rounded-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
-
-                                    src={ImageAbout3} />
+                            <div className="pl-6 lg:relative lg:m-0 lg:h-full lg:px-0 ">
+                                <div className="about-container">
+                                    <img loading="lazy"
+                                        className="about-image"
+                                        src={ImageAbout3}
+                                        alt="Viví Palermo" />
+                                </div>
                             </div>
                         </div>
                     </div>

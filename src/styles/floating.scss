@@ -1,8 +1,14 @@
-.whatsapp-btn {
+.whatsapp-container {
   position: fixed;
   bottom: 20px;
   right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   z-index: 9999;
+}
+
+.whatsapp-btn {
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -12,16 +18,22 @@
   justify-content: center;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   animation: breathe 2s ease-in-out infinite;
+  text-decoration: none;
 }
-
 
 .whatsapp-btn i {
   color: #fff;
   font-size: 24px;
   animation: beat 2s ease-in-out infinite;
-  text-decoration: none;
 }
 
+.whatsapp-text {
+  margin-top: 10px;
+  color: #25D366;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+}
 
 @keyframes breathe {
   0% {
@@ -34,7 +46,6 @@
     box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
   }
 }
-
 
 @keyframes beat {
   0% {
