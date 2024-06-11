@@ -38,7 +38,7 @@ const BedroomDetails: React.FC = () => {
 
     return (
         <>
-            <section style={{ marginTop: "7rem" }} className="py-12 sm:py-16">
+            <section style={{ marginTop: "1rem" }} className="py-12 sm:py-16">
                 <div className="container px-4 mx-auto">
                     <div className="grid grid-cols-1 gap-12 mt-8 lg:col-gap-12 xl:col-gap-16 lg:mt-12 lg:grid-cols-5 lg:gap-16">
                         <div className="lg:col-span-3 lg:row-end-1">
