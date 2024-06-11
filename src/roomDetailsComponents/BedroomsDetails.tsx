@@ -1,7 +1,7 @@
+import React, { useState } from "react";
 import { useParams } from "react-router-dom";
-import { useState } from "react";
-import "../styles/bedroomdetails.scss";
-import { cardData } from "../data/cardData"; // Asegúrate de usar la ruta correcta para importar cardData
+import { cardData } from "../data/cardData";
+import ModalImage from "react-modal-image";
 
 const BedroomDetails: React.FC = () => {
     let { id } = useParams<{ id: string }>();
@@ -15,6 +15,27 @@ const BedroomDetails: React.FC = () => {
 
     const images = [card.imgSrc1, card.imgSrc2, card.imgSrc3, card.imgSrc4].filter(img => img && img !== 'null');
 
+    const shareOnTwitter = () => {
+        window.open(`https://twitter.com/intent/tweet?url=${window.location.href}`, "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=300,left=500,width=600,height=600");
+    };
+
+    const shareOnFacebook = () => {
+        window.open(`https://www.facebook.com/sharer/sharer.php?u=${window.location.href}`, "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=300,left=500,width=600,height=600");
+    };
+
+    const shareOnGooglePlus = () => {
+        window.open(`https://plus.google.com/share?url=${window.location.href}`, "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=300,left=500,width=600,height=600");
+    };
+
+    const shareOnPinterest = () => {
+        window.open(`https://pinterest.com/pin/create/button/?url=${window.location.href}`, "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=300,left=500,width=600,height=600");
+    };
+
+    const shareOnOutlook = () => {
+        window.open(`mailto:?body=${window.location.href}`, "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=300,left=500,width=600,height=600");
+    };
+
+
     return (
         <>
             <section style={{ marginTop: "7rem" }} className="py-12 sm:py-16">
@@ -24,16 +45,21 @@ const BedroomDetails: React.FC = () => {
                             <div className="lg:flex lg:items-start">
                                 <div className="lg:order-2 lg:ml-5">
                                     <div className="max-w-xl overflow-hidden rounded-lg">
-                                        <img className="object-cover w-full h-full max-w-full" src={mainImage} alt={card.title} />
+                                        {/* Utiliza ModalImage para mostrar la imagen */}
+                                        <ModalImage
+                                            small={mainImage}
+                                            large={mainImage}
+                                            alt={card.title}
+                                        />
                                     </div>
                                 </div>
                                 <div className="w-full mt-2 lg:order-1 lg:w-32 lg:flex-shrink-0">
                                     <div className="flex flex-row items-start lg:flex-col">
                                         {images.map((img, index) => (
-                                            <button 
+                                            <button
                                                 key={index}
-                                                type="button" 
-                                                onClick={() => setMainImage(img)} 
+                                                type="button"
+                                                onClick={() => setMainImage(img)}
                                                 className={`h-20 mb-3 overflow-hidden text-center border-2 rounded-lg flex-0 aspect-square ${mainImage === img ? 'border-gray-900' : 'border-transparent'}`}
                                             >
                                                 <img className="object-cover w-full h-full" src={img} alt={card.title} />
@@ -46,9 +72,7 @@ const BedroomDetails: React.FC = () => {
                         <div className="lg:col-span-2 lg:row-span-2 lg:row-end-2">
                             <h1 className="mt-8 text-3xl font-bold">{card.title}</h1>
                             <p className="mt-4">{card.description}</p>
-                            {card.subdescription && (
-                                <p className="mt-4" dangerouslySetInnerHTML={{ __html: card.subdescription }} />
-                            )}
+                            <p className="mt-4">{card.subdescription}</p>
                             <div className="flex items-center mt-5">
                                 <div className="flex items-center">
                                     {[...Array(5)].map((_, index) => (
@@ -71,7 +95,18 @@ const BedroomDetails: React.FC = () => {
                                         {card.category}
                                     </div>
                                 </li>
+                                <li className="flex mt-4 space-x-3">
+                                    <span className="text-sm font-semibold text-gray-600 uppercase">Share:</span>
+                                    <div className="flex items-start space-x-3">
+                                        <button className="icon-button" onClick={shareOnTwitter}><i className="text-lg fab fa-twitter"></i></button>
+                                        <button className="icon-button" onClick={shareOnFacebook}><i className="text-lg fab fa-facebook"></i></button>
+                                        <button className="icon-button" onClick={shareOnGooglePlus}><i className="text-lg fab fa-google-plus-g"></i></button>
+                                        <button className="icon-button" onClick={shareOnPinterest}><i className="text-lg fab fa-pinterest"></i></button>
+                                        <button className="icon-button" onClick={shareOnOutlook}><i className="text-lg fas fa-envelope"></i></button>
+                                    </div>
+                                </li>
                             </ul>
+
                         </div>
                     </div>
                 </div>

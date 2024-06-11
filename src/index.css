@@ -30,5 +30,17 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+.icon-button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.icon-button:hover {
+  opacity: 0.8;
+}
+
+
 
 
