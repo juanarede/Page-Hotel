@@ -8,6 +8,7 @@ import Room6 from '../assets/img/rooms/room6.webp';
 import Room7 from '../assets/img/rooms/room7.webp';
 import Room8 from '../assets/img/rooms/room8.webp';
 import Room9 from '../assets/img/rooms/room9.webp';
+import { Link } from 'react-router-dom';
 
 const cardData = [
     {
@@ -96,11 +97,11 @@ const CardsBedrooms: React.FC = () => {
                                 <img className="w-full" src={card.imgSrc} alt={card.title} />
                                 <div className="absolute top-0 bottom-0 left-0 right-0 transition duration-300 bg-gray-900 opacity-25 hover:bg-transparent"></div>
                             </a>
-                            <a href="#">
+                            <Link to={`/habitacion/${card.id}`}>
                                 <div className="absolute top-0 right-0 px-4 py-2 mt-3 mr-3 bg-[#00acee] rounded-lg px-6 py-2 text-xs font-medium uppercase leading-normal text-white transition duration-150 ease-in-out hover:bg-[#0099cc] focus:bg-[#0099cc] focus:outline-none focus:ring-0 active:bg-[#007bb5]">
                                     {card.label}
                                 </div>
-                            </a>
+                            </Link>
                         </div>
                         <div className="px-6 py-4 mb-auto">
                             <a href="#" className="inline-block mb-2 text-lg font-medium transition duration-500 ease-in-out hover:text-indigo-600">

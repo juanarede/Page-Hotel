@@ -14,8 +14,8 @@ const Header: React.FC = () => {
         <div className="absolute top-0 bottom-0 left-0 right-0 w-full h-full bg-fixed bg-black/60">
           <div className="flex items-center justify-center h-full">
             <div className="px-6 text-center text-white md:px-12">
-              <h3 className="mb-8 text-3xl font-bold">Lorem Ipsu</h3>
-              <p className="text-lg">LORem IPSU</p>
+              <h3 className="mb-8 text-3xl font-bold">Habitaciones y Suites Exclusivas</h3>
+              {/* <p className="text-lg">LORem IPSU</p> */}
             </div>
           </div>
         </div>

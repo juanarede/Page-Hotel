@@ -144,7 +144,7 @@ const Navbar: React.FC = () => {
             <li>
               <Link
                 to="/inicio"
-                className="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#00acee] md:p-0 md:dark:hover:hover:text-[#00acee] dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent "
+                className="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-600 md:hover:bg-transparent md:hover:text-[#00acee] md:p-0 md:dark:hover:hover:text-[#00acee] dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent "
               >
                 Inicio
               </Link>
@@ -152,7 +152,7 @@ const Navbar: React.FC = () => {
             <li>
               <Link
                 to="/habitaciones"
-                className="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#00acee] md:p-0 md:dark:hover:hover:text-[#00acee] dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent "
+                className="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-600 md:hover:bg-transparent md:hover:text-[#00acee] md:p-0 md:dark:hover:hover:text-[#00acee] dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent "
               >
                 Habitaciones
               </Link>
@@ -161,7 +161,7 @@ const Navbar: React.FC = () => {
             <li>
               <a
                 href="#"
-                className="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#00acee] md:p-0 dark:text-white md:dark:hover:hover:text-[#00acee] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent "
+                className="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-600 md:hover:bg-transparent md:hover:text-[#00acee] md:p-0 dark:text-white md:dark:hover:hover:text-[#00acee] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent "
               >
                 Servicios
               </a>
@@ -169,7 +169,7 @@ const Navbar: React.FC = () => {
             <li>
               <a
                 href="#"
-                className="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#00acee] md:p-0 dark:text-white md:dark:hover:hover:text-[#00acee] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent "
+                className="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-600 md:hover:bg-transparent md:hover:text-[#00acee] md:p-0 dark:text-white md:dark:hover:hover:text-[#00acee] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent "
               >
                 Conocenos
               </a>
@@ -177,7 +177,7 @@ const Navbar: React.FC = () => {
             <li>
               <a
                 href="#"
-                className="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#00acee] md:p-0 dark:text-white md:dark:hover:hover:text-[#00acee] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent "
+                className="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-600 md:hover:bg-transparent md:hover:text-[#00acee] md:p-0 dark:text-white md:dark:hover:hover:text-[#00acee] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent "
               >
                 Galería de Fotos
               </a>
@@ -185,7 +185,7 @@ const Navbar: React.FC = () => {
             <li>
               <a
                 href="#"
-                className="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#00acee] md:p-0 dark:text-white md:dark:hover:hover:text-[#00acee] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent "
+                className="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-600 md:hover:bg-transparent md:hover:text-[#00acee] md:p-0 dark:text-white md:dark:hover:hover:text-[#00acee] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent "
               >
                 Contacto
               </a>
