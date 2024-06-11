@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const Navbar: React.FC = () => {
   const [isMenuVisible, setMenuVisible] = useState(false);
@@ -141,29 +142,22 @@ const Navbar: React.FC = () => {
           </div>
           <ul className="flex flex-col p-4 mt-4 font-medium border border-gray-100 rounded-lg md:p-0 md:flex-row md:space-x-8 md:mt-0 md:border-0 dark:border-gray-700">
             <li>
-              <a
-                href="#"
+              <Link
+                to="/inicio"
                 className="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#00acee] md:p-0 md:dark:hover:hover:text-[#00acee] dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent "
               >
                 Inicio
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="#"
+              <Link
+                to="/habitaciones"
                 className="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#00acee] md:p-0 md:dark:hover:hover:text-[#00acee] dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent "
               >
                 Habitaciones
-              </a>
+              </Link>
             </li>
-            <li>
-              <a
-                href="#"
-                className="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#00acee] md:p-0 dark:text-white md:dark:hover:hover:text-[#00acee] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent "
-              >
-                Ubicación
-              </a>
-            </li>
+          
             <li>
               <a
                 href="#"
