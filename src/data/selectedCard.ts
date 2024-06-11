@@ -10,16 +10,16 @@ import ImgEstandar1 from '../assets/img/roomsDetails/Standard1.webp';
 import ImgSuperior1 from '../assets/img/roomsDetails/superior1.webp';
 
 
-import ImgEjecutiva1 from '../assets/img/roomsDetails/Ejecutiva1.webp';
+import ImgEjecutiva1 from '../assets/img/roomsDetails/Ejecutiva2.webp';
 
 
-import ImgJunior1 from '../assets/img/roomsDetails/Junior-1.webp';
+import ImgJunior1 from '../assets/img/roomsDetails/Junior-3.webp';
 
 
 import ImgHoney1 from '../assets/img/roomsDetails/honey1.webp';
 
 
-import ImgDiplomatica1 from '../assets/img/roomsDetails/diplomatica1.webp';
+import ImgDiplomatica1 from '../assets/img/roomsDetails/diplomatica2.webp';
 
 
 
