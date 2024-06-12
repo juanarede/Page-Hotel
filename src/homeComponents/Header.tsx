@@ -16,14 +16,22 @@ const Header: React.FC = () => {
     },
   ];
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [nextImageUrl, setNextImageUrl] = useState<string | null>(null);
 
   useEffect(() => {
+    const preloadNextImage = () => {
+      const nextIndex = currentImageIndex === imagesAndTexts.length - 1 ? 0 : currentImageIndex + 1;
+      setNextImageUrl(imagesAndTexts[nextIndex].image);
+    };
+
     const interval = setInterval(() => {
       setCurrentImageIndex(prevIndex => (prevIndex === imagesAndTexts.length - 1 ? 0 : prevIndex + 1));
+      preloadNextImage();
     }, 7000);
 
+    preloadNextImage(); // Preload initial next image
     return () => clearInterval(interval);
-  }, [imagesAndTexts.length]);
+  }, [currentImageIndex, imagesAndTexts]);
 
   return (
     <div className="relative h-[680px] overflow-hidden">
@@ -48,6 +56,7 @@ const Header: React.FC = () => {
           </div>
         </div>
       </div>
+      {nextImageUrl && <div style={{ display: 'none' }}>{nextImageUrl}</div>}
     </div>
   );
 };

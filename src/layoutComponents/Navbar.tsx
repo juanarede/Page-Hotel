@@ -35,14 +35,14 @@ const Navbar: React.FC = () => {
     <nav className={`fixed top-0 left-0 w-full z-50 transition-colors duration-300 ${isScrolled ? "bg-black" : "md:bg-transparent bg-black md:hover:bg-black"
       }`}>
       <div className="flex flex-wrap items-center justify-between max-w-screen-xl p-5 mx-auto">
-        <a href="" className="flex items-center">
+        <Link to="/inicio" className="flex items-center">
           <img
             style={{ width: "6rem", marginBottom: "1rem" }}
             src="https://www.hotelcc.com.ar/wp-content/uploads/2013/12/Logo_w.png"
             className="mr-3"
             alt="Logo"
           />
-        </a>
+        </Link>
         <div className="flex md:order-2">
           <button
             id="search-toggle"
