@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
+import Logo from "../assets/img/Logo_Hotel.png"
 
 const Navbar: React.FC = () => {
   const [isMenuVisible, setMenuVisible] = useState(false);
@@ -38,7 +39,7 @@ const Navbar: React.FC = () => {
         <Link to="/inicio" className="flex items-center">
           <img
             style={{ width: "6rem", marginBottom: "1rem" }}
-            src="https://www.hotelcc.com.ar/wp-content/uploads/2013/12/Logo_w.png"
+            src={Logo}
             className="mr-3"
             alt="Logo"
           />

@@ -1,6 +1,7 @@
 import { EmailIcon } from "../icons/EmailIcon";
 import { LocationIcon } from "../icons/LocationIcon";
 import { WhatsappIcon } from "../icons/WhatsappIcon";
+import Logo from "../assets/img/Logo_Hotel.png"
 
 const Footer: React.FC = () => {
     return (
@@ -9,7 +10,7 @@ const Footer: React.FC = () => {
                 <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
                     <div className="flex flex-col items-center justify-between gap-8 py-16 lg:flex-row">
                         <a href="https://pagedone.io/" className="flex justify-center ">
-                            <img style={{ width: "9rem", marginBottom: "1rem" }} src="https://www.hotelcc.com.ar/wp-content/uploads/2013/12/Logo_w.png" className="mr-3 " alt="Logo" />
+                            <img style={{ width: "9rem", marginBottom: "1rem" }} src={Logo} className="mr-3 " alt="Logo" />
 
                         </a>
                         <ul className="items-center justify-center text-lg text-center transition-all duration-500 sm:flex gap-14 lg:gap-10 xl:gap-14">
