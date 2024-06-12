@@ -1,0 +1,64 @@
+.header-carousel {
+    position: relative;
+    height: 680px;
+    overflow: hidden;
+  
+    .header-slide {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      opacity: 0;
+      transition: opacity 2s;
+      background-size: cover;
+      background-position: center;
+  
+      &.active {
+        opacity: 1;
+      }
+    }
+  
+    .header-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.514); 
+    }
+  
+    .header-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: white;
+  
+      .header-title {
+        font-size: 5em;
+        margin-bottom: 0.5em;
+      }
+  
+      .header-subtitle {
+        font-size: 3em;
+        margin-bottom: 1em;
+      }
+  
+      .header-button {
+        background-color: #00acee;
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        font-size: 1.5em;
+        cursor: pointer;
+        transition: background-color 0.3s;
+  
+        &:hover {
+          background-color: #0099cc;
+        }
+      }
+    }
+  }
+  
