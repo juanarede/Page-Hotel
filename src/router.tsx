@@ -3,6 +3,7 @@ import Home from './pages/Home';
 import GuestLayout from './layout/GuestLayout';
 import Bedrooms from './pages/Bedrooms';
 import RoomDetails from './pages/RoomDetails';
+import AboutUs from './pages/AboutUs';
 
 
 const router = createBrowserRouter([
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
       {
         path: '/habitacion/:id', 
         element: <RoomDetails/>, 
+      },
+      {
+        path: '/conocenos', 
+        element: <AboutUs/>, 
       },
     ]
   },
