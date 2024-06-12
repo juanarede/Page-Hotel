@@ -19,7 +19,7 @@ const Header: React.FC = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentImageIndex((prevIndex) => (prevIndex === imagesAndTexts.length - 1 ? 0 : prevIndex + 1));
+      setCurrentImageIndex(prevIndex => (prevIndex === imagesAndTexts.length - 1 ? 0 : prevIndex + 1));
     }, 7000);
 
     return () => clearInterval(interval);
@@ -28,7 +28,7 @@ const Header: React.FC = () => {
   return (
     <div className="relative h-[680px] overflow-hidden">
       <div
-        className="absolute top-0 bottom-0 left-0 right-0 w-full h-full transition-opacity duration-1000 bg-center bg-no-repeat bg-cover"
+        className="absolute top-0 bottom-0 left-0 right-0 w-full h-full transition-opacity bg-center bg-no-repeat bg-cover duration-2000"
         style={{
           backgroundImage: `url(${imagesAndTexts[currentImageIndex].image})`,
         }}

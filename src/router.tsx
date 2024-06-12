@@ -4,6 +4,7 @@ import GuestLayout from './layout/GuestLayout';
 import Bedrooms from './pages/Bedrooms';
 import RoomDetails from './pages/RoomDetails';
 import AboutUs from './pages/AboutUs';
+import Galeria from './pages/Galeria';
 
 
 const router = createBrowserRouter([
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
       {
         path: '/conocenos', 
         element: <AboutUs/>, 
+      },
+      {
+        path: '/galeria', 
+        element: <Galeria/>, 
       },
     ]
   },

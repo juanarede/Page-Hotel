@@ -1,4 +1,3 @@
-import React from 'react';
 import Room1 from '../assets/img/rooms/room1.webp';
 import Room2 from '../assets/img/rooms/room2.webp';
 import Room3 from '../assets/img/rooms/room3.webp';
@@ -93,10 +92,10 @@ const CardsBedrooms: React.FC = () => {
                     <div key={card.id} className="flex flex-col overflow-hidden rounded shadow-lg">
                         <a href="#"></a>
                         <div className="relative">
-                            <a href="#">
+                            <Link to={`/habitacion/${card.id}`}>
                                 <img className="w-full" src={card.imgSrc} alt={card.title} />
                                 <div className="absolute top-0 bottom-0 left-0 right-0 transition duration-300 bg-gray-900 opacity-25 hover:bg-transparent"></div>
-                            </a>
+                            </Link>
                             <Link to={`/habitacion/${card.id}`}>
                                 <div className="absolute top-0 right-0 px-4 py-2 mt-3 mr-3 bg-[#00acee] rounded-lg px-6 py-2 text-xs font-medium uppercase leading-normal text-white transition duration-150 ease-in-out hover:bg-[#0099cc] focus:bg-[#0099cc] focus:outline-none focus:ring-0 active:bg-[#007bb5]">
                                     {card.label}

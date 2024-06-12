@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 
 const Navbar: React.FC = () => {
   const [isMenuVisible, setMenuVisible] = useState(false);
@@ -21,10 +21,19 @@ const Navbar: React.FC = () => {
     };
   }, []);
 
+
+  const location = useLocation();
+
+  const handleLinkClick = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  };
+
   return (
-    <nav className={`fixed top-0 left-0 w-full z-50 transition-colors duration-300 ${
-      isScrolled ? "bg-black" : "md:bg-transparent bg-black md:hover:bg-black"
-    }`}>
+    <nav className={`fixed top-0 left-0 w-full z-50 transition-colors duration-300 ${isScrolled ? "bg-black" : "md:bg-transparent bg-black md:hover:bg-black"
+      }`}>
       <div className="flex flex-wrap items-center justify-between max-w-screen-xl p-5 mx-auto">
         <a href="" className="flex items-center">
           <img
@@ -110,9 +119,8 @@ const Navbar: React.FC = () => {
           </button>
         </div>
         <div
-          className={`items-center justify-between w-full md:flex md:w-auto md:order-1 ${
-            isMenuVisible ? "" : "hidden"
-          }`}
+          className={`items-center justify-between w-full md:flex md:w-auto md:order-1 ${isMenuVisible ? "" : "hidden"
+            }`}
           id="navbar-search"
         >
           <div className="relative mt-3 md:hidden">
@@ -144,52 +152,51 @@ const Navbar: React.FC = () => {
             <li>
               <Link
                 to="/inicio"
-                className="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-600 md:hover:bg-transparent md:hover:text-[#00acee] md:p-0 md:dark:hover:hover:text-[#00acee] dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent "
+                onClick={handleLinkClick}
+                className={`block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-600 md:hover:bg-transparent md:p-0 dark:text-white md:dark:hover:hover:text-turquoise dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent ${location.pathname === '/inicio' ? 'text-turquoise border-b-2 border-turquoise' : ''
+                  }`}
               >
-                Inicio
+                <span className={`${location.pathname === '/inicio' ? 'text-turquoise' : ''}`}>
+                  Inicio
+                </span>
               </Link>
             </li>
             <li>
               <Link
                 to="/habitaciones"
-                className="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-600 md:hover:bg-transparent md:hover:text-[#00acee] md:p-0 md:dark:hover:hover:text-[#00acee] dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent "
+                onClick={handleLinkClick}
+                className={`block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-600 md:hover:bg-transparent md:p-0 dark:text-white md:dark:hover:hover:text-turquoise dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent ${location.pathname === '/habitaciones' ? 'text-turquoise border-b-2 border-turquoise' : ''
+                  }`}
               >
-                Habitaciones
+                <span className={`${location.pathname === '/habitaciones' ? 'text-turquoise' : ''}`}>
+                  Habitaciones
+                </span>
               </Link>
             </li>
-          
-            {/* <li>
-              <a
-                href="#"
-                className="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-600 md:hover:bg-transparent md:hover:text-[#00acee] md:p-0 dark:text-white md:dark:hover:hover:text-[#00acee] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent "
-              >
-                Servicios
-              </a>
-            </li> */}
             <li>
               <Link
                 to="/conocenos"
-                className="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-600 md:hover:bg-transparent md:hover:text-[#00acee] md:p-0 dark:text-white md:dark:hover:hover:text-[#00acee] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent "
+                onClick={handleLinkClick}
+                className={`block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-600 md:hover:bg-transparent md:p-0 dark:text-white md:dark:hover:hover:text-turquoise dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent ${location.pathname === '/conocenos' ? 'text-turquoise border-b-2 border-turquoise' : ''
+                  }`}
               >
-                Conocenos
+                <span className={`${location.pathname === '/conocenos' ? 'text-turquoise' : ''}`}>
+                  Conocenos
+                </span>
               </Link>
             </li>
             <li>
-              <a
-                href="#"
-                className="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-600 md:hover:bg-transparent md:hover:text-[#00acee] md:p-0 dark:text-white md:dark:hover:hover:text-[#00acee] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent "
+              <Link
+                to="/galeria"
+                onClick={handleLinkClick}
+                className={`block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-600 md:hover:bg-transparent md:p-0 dark:text-white md:dark:hover:hover:text-turquoise dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent ${location.pathname === '/galeria' ? 'text-turquoise border-b-2 border-turquoise' : ''
+                  }`}
               >
-                Galería de Fotos
-              </a>
+                <span className={`${location.pathname === '/galeria' ? 'text-turquoise' : ''}`}>
+                  Galería de Fotos
+                </span>
+              </Link>
             </li>
-            {/* <li>
-              <a
-                href="#"
-                className="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-600 md:hover:bg-transparent md:hover:text-[#00acee] md:p-0 dark:text-white md:dark:hover:hover:text-[#00acee] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent "
-              >
-                Contacto
-              </a>
-            </li> */}
           </ul>
         </div>
       </div>
