@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
             <footer className="w-full bg-gray-900">
                 <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
                     <div className="flex flex-col items-center justify-between gap-8 py-16 lg:flex-row">
-                        <a href="https://pagedone.io/" className="flex justify-center ">
+                        <a href="" className="flex justify-center ">
                             <img style={{ width: "9rem", marginBottom: "1rem" }} src={Logo} className="mr-3 " alt="Logo" />
 
                         </a>
